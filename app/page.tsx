@@ -6,7 +6,7 @@ export default async function Home() {
 
   return (
     <main className="max-w-5xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold text-center mb-10">Our Cakes</h1>
+      <h1 className="text-2xl font-bold text-center mb-10">Our Cakes</h1>
       {cakes.length === 0 ? (
         <p className="text-center text-gray-500">No cakes found.</p>
       ) : (
