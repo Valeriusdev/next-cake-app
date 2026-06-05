@@ -1,8 +1,8 @@
-import { prismicClient } from "@/lib/prismic";
+import { prismicClient, CakeDocument } from "@/lib/prismic";
 import { CakeCard } from "./components/CakeCard";
 
 export default async function Home() {
-  const cakes = await prismicClient.getAllByType("cake");
+  const cakes = (await prismicClient.getAllByType("cake")) as CakeDocument[];
 
   return (
     <main className="max-w-5xl mx-auto px-4 py-12">
